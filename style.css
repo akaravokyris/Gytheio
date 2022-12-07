@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(238, 186, 122);
+    background-color: antiquewhite;
 }
 
 .text{
@@ -11,9 +11,11 @@ body{
 
 .title
 {
-    color: black;
+    color: rgb(36, 35, 35);
     font-family: Arial, Helvetica, sans-serif;
     padding: 30px;
+    background-color: antiquewhite;
+
 }
 
 .imagery{
@@ -23,6 +25,28 @@ body{
 
 .item-1{
     display: flex;
+    background-color: antiquewhite;
+
 }
+
+header{
+    background-color: blueviolet;
+    height: 200px;
+    
+}
+
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(95, 95, 233);
+    justify-content: space-around;
+    
+}
+
+.image-item-mix{
+    padding: 25px;
+}
+
+
 
 
