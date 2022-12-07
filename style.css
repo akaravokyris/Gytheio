@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(238, 186, 122);
+}
+
+.text{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+
+}
+
+.title
+{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+}
+
+.imagery{
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.item-1{
+    display: flex;
+}
+
+
