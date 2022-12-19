@@ -163,10 +163,18 @@ button:hover {
     width: 100%
 }
 
-.about-image{
-    width:500px;
-    height:auto;
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+
 }
 
+.container > img{
+    background-color: rgba(255, 248, 233, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    font-size: 30px;
+    text-align: center;
+}
 
 
