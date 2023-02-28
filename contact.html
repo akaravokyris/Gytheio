@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -27,30 +28,34 @@
         Contact Us
     </h1>
 
-
-    <div class="spacer"></div>
-    <div class="spacer"></div>
-
 <!-- Parakatw vrisketai i forma egrafis sto newsletter -->
 
-    <div class="image-paragraph"> 
-        <div class="login-box">
-            <h2>Subscribe to Newsletter</h2>
-            <form>
-              <div class="user-box">
-                <input type="text" name="" required="">
-                <label>Full Name</label>
-              </div>
-              <div class="user-box">
-                <input type="password" name="" required="">
-                <label>Email</label>
-              </div>
-              <a href="#">
-                Submit
-              </a>
-            </form>
-          </div>
-    </div>
+<div class="container">
+  <form id="form" name="contactForm" action="">
+      <h1>Registration</h1>
+      <div class="input-control">
+          <label for="username">Username</label>
+          <input id="username" name="username" type="text">
+          <div class="error"></div>
+      </div>
+      <div class="input-control">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="text">
+          <div class="error"></div>
+      </div>
+      <div class="input-control">
+          <label for="password">Password</label>
+          <input id="password"name="password" type="password">
+          <div class="error"></div>
+      </div>
+      <div class="input-control">
+          <label for="password2">Password again</label>
+          <input id="password2"name="password2" type="password">
+          <div class="error"></div>
+      </div>
+      <button id="button" type="submit">Sign Up</button>
+  </form>
+</div>
 
 <!-- Oi classes spacer einai aplws gia xwro. Exoun 50px height sto css arxeio -->
 
