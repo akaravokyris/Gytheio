@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/script.js"></script>
+</head>
+<body>
+    <div class="desktop-menu">
+        <div class="logo">
+            <a href="#"><h2>Gytheio</h2></a>
+        </div>
+        <div class="navbar-desktop">
+            <ul class="desktop-menu-list">
+                <li><a href="../index.html"><h2 class="menu-item grow">Home</h2></a></li>
+                <li><a href="#"><h2 class="menu-item grow active-menu-item">About</h2></a></li>
+                <li><a href="./history.html"><h2 class="menu-item grow">History</h2></a></li>
+                <li><a href="./events.html"><h2 class="menu-item grow">Events</h2></a></li>
+                <li id="special-menu-item"><a href="./contact.html"><h2 class="menu-item grow">Contact</h2></a></li>
+            </ul>    
+        </div>             
+    </div>
+    <div class="mobile-menu">
+        <div class="logo">
+            <a href="#"><h2>Gytheio</h2></a>
+        </div>
+        <button onclick="hamburgerClicked()" class="hamburger-menu-btn">
+            <img class="hamburger-icon" src="../images/Hamburger_icon.svg.png">
+            <nav class="">
+                <div class="navbar-mobile" id="navbar-mobile">
+                    <ul class="mobile-menu-list">
+                        <li><a href="../index.html"><h2 class="menu-item grow">Home</h2></a></li>
+                        <li><a href="#"><h2 class="menu-item grow active-menu-item">About</h2></a></li>
+                        <li><a href="./history.html"><h2 class="menu-item grow">History</h2></a></li>
+                        <li><a href="./events.html"><h2 class="menu-item grow">Events</h2></a></li>
+                        <li><a href="./contact.html"><h2 class="menu-item grow">Contact</h2></a></li>
+                    </ul>    
+                </div>        
+            </nav>
+        </button>
+    </div>
+
+    <!-- Page heading -->
+    <div class="page-header">
+        <h1 class="header-text">About</h1>
+    </div>
+
+    <!-- Image with text -->
+    <div class="home-img-text-container-1"> 
+        <div >
+            <img class="home-img-text-image" src="../images/gytheio-1.jpg" alt="gytheio-image">
+        </div>
+        <div class="home-img-text-text" style="display:inline-block;">
+            <h2 class="home-img-text-header">A Small Walk to Gytheio</h2>
+            <p class="home-img-text-par-text">A pleasant walk on the beach of the port with a view of the sea and the fresh air of nature. 
+                You can visit the imposing lighthouse in a small niche of the bay or even take a walk on the mountain paths.
+            </p>
+        </div>
+    </div>
+
+    <!-- Map -->
+    <div class="about-map">
+        <h2>Find Gytheio on the map</h2>
+        <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d229703.7758337147!2d22.544640667653475!3d36.73350915009782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1361e08c2561ed47%3A0x31ed3e51e04e5d2e!2zzpPPjc64zrXOuc6_IDIzMiAwMA!5e0!3m2!1sel!2sgr!4v1677865486209!5m2!1sel!2sgr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+    </div>
+
+    <!-- Small images - Highlights -->
+    <h2 id="highlights-header">Highlights</h2>
+    <div class="big-image-container-about">
+        <div class="image-container">
+            <a href="#"><img class="img-item" src="../images/gytheio-faros.jpg" alt="gytheio-image">
+            <h3>The lighthouse</h3></a>
+        </div>
+        <div class="image-container">
+           <a href="#"><img class="img-item" src="../images/gytheio-1.jpg" alt="gytheio-image">
+            <h3>Port</h3></a>
+        </div>
+        <div class="image-container">
+            <a href="#"><img class="img-item" src="../images/gytheio-3.jpg" alt="gytheio-image">
+            <h3>The shipwreck</h3></a>
+        </div>
+        <div class="image-container">
+            <a href="#"><img class="img-item" src="../images/gytheio-2.jpg" alt="gytheio-image">
+            <h3>The beaches</h3></a>
+        </div>
+        
+        
+         <div class="image-container">
+            <a href="#"><img class="img-item" src="../images/gytheio-kastro.jpg" alt="gytheio-image">
+            <h3>The tower</h3></a>
+        </div>
+         <div class="image-container">
+             <a href="#"><img class="img-item" src="../images/gytheio-theatre.jpg" alt="gytheio-image">
+             <h3>The ancient theater</h3></a>
+         </div>
+         
+        <div class="image-container">
+            <a href="#"><img class="img-item" src="../images/gytheio-limani.jpg" alt="gytheio-image">
+            <h3>The coffee shops</h3></a>
+        </div>
+        <!-- <div class="image-container" id="about-special-item">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint perferendis at veniam modi nesciunt veritatis! Lorem ipsum dolor sit amet.</p>
+            <a href="#"><img class="img-item" src="../images/gytheio-petrino.jpg" alt="gytheio-image">
+             <h3>Οικισμοί</h3></a>
+         </div> -->
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-logo-menu inner-menu">
+            <div class="logo">
+                <h2>Gytheio</h2>
+            </div>
+            <div class="social-icons-menu">
+                <a href="#"><img class="social-icon" src="../images/2168281.png" alt="facebook-page"></a>
+                <a href="#"><img class="social-icon" src="../images/instagram-icon.webp" alt="instagram-page"></a>
+                <a href="#"><img class="social-icon" src="../images/linkedin-icon-svg-15.jpg" alt="linkedin-page"></a>
+            </div>
+        </div>
+        <div class="footer-links-menu inner-menu">
+            <h3>Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-info-menu inner-menu">
+            <h3>Information</h3>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cookies Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact-menu inner-menu">
+            <h3>Contact</h3>            
+            <ul>
+                <li>Διεύθυνση - Αθήνα, Αγ. Παρασκευή</li>
+                <li>Τηλέφωνο - 6983154861</li>
+                <li>Email - spelldarkness@gmail.com</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

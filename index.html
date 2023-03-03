@@ -2,89 +2,97 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script ></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="default.css" />    
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
 </head>
-
-
 <body>
 
-
-    </header>
-
-<!-- Parakatw vrisketai to menu tis istoselidas -->
-    
-    <div></div>
-    <ul class="menu">
-        <li><a href="index.html"><h2 class="menu-item grow">Home</h2></a></li>
-        <li><a href="about.html"><h2 class="menu-item grow">About</h2></a></li>
-        <li><a href="history.html"><h2 class="menu-item grow">History</h2></a></li>
-        <li><a href="lifestyle.html"><h2 class="menu-item grow">Lifestyle</h2></a></li>
-        <li><a href="contact.html"><h2 class="menu-item grow">Contact</h2></a></li>
-
-    </ul>
-
-        <div class="spacer"></div>
-        <div class="flower-pink">
-            <img id="pretty-flower" src="./images/ugly-flower.png" alt="">
+<!-- Desktop Menu -->
+    <div class="desktop-menu">
+        <div class="logo">
+            <a href="#"><h2>Gytheio</h2></a>
         </div>
-        <h1 class="title">
-            Στο Γύθειο
-        </h1>
-        <div class="spacer"></div>
-       
-        <img id="ugly-flower" src="./images/pretty-flower.png" alt="">
-
-    <div class="spacer"></div>
-    <div class="spacer"></div>
-
- 
-<!-- Parakatw vriskontai fwtografies oi opoies se odhgoun stis diafores selides tou site -->
-    
-    <div class="full-width-box-styling">
-        
-        <a href="about.html"><div>
-            <img class="image-item" src="./images/OIP (6).jpg" alt="gytheio-image">
-            <h3 class="image-text">About</h3>
-        </div>
-        </a>
-        <a href="history.html">
-            <div>
-                <img class="image-item" src="./images/OIP (2).jpg" alt="gytheio-image">
-                <h3 class="image-text">History</h3>
-            </div>
-        </a>
-        <a href="lifestyle.html">
-            <div>
-                <img class="image-item" src="./images/OIP (7).jpg" alt="gytheio-image">
-                <h3 class="image-text">Lifestyle</h3>
-            </div>
-        </a>
-
+        <div class="navbar-desktop">
+            <ul class="desktop-menu-list">
+                <li><a href="#"><h2 class="menu-item grow active-menu-item">Home</h2></a></li>
+                <li><a href="pages/about.html"><h2 class="menu-item grow">About</h2></a></li>
+                <li><a href="pages/history.html"><h2 class="menu-item grow">History</h2></a></li>
+                <li><a href="pages/events.html"><h2 class="menu-item grow">Events</h2></a></li>
+                <li id="special-menu-item"><a href="pages/contact.html"><h2 class="menu-item grow">Contact</h2></a></li>
+            </ul>    
+        </div>             
     </div>
- 
+
+<!-- Mobile Menu     -->
+<!-- Desktop Menu and Mobile Menu switch when the screen is below 1000px -->
+    <div class="mobile-menu">
+        <div class="logo">
+            <a href="#"><h2>Gytheio</h2></a>
+        </div>
+        <button onclick="hamburgerClicked()" class="hamburger-menu-btn">
+            <img class="hamburger-icon" src="images/Hamburger_icon.svg.png">
+            <nav class="">
+                <div class="navbar-mobile" id="navbar-mobile">
+                    <ul class="mobile-menu-list">
+                        <li><a href="#"><h2 class="menu-item grow active-menu-item">Home</h2></a></li>
+                        <li><a href="pages/about.html"><h2 class="menu-item grow">About</h2></a></li>
+                        <li><a href="pages/history.html"><h2 class="menu-item grow">History</h2></a></li>
+                        <li><a href="pages/events.html"><h2 class="menu-item grow">Events</h2></a></li>
+                        <li><a href="pages/contact.html"><h2 class="menu-item grow">Contact</h2></a></li>
+                    </ul>    
+                </div>        
+            </nav>
+        </button>
+    </div>
+
+    <!-- Hero section -->
+    <div class="hero-home-section">
+        <div class="overlay">
+            <h1 class="header-text">Vacation in Gytheio</h1>
+        </div>
+    </div>
+
+    <!-- Flower animation -->
+    <img id="flower" src="./images/pretty-flower.png" alt="">
+    
+    <!-- Pages of the website presented with a photo -->
+    <div class="big-image-container">
+        <div class="image-container">
+           <a href="./pages/about.html"><img class="img-item" src="./images/OIP (6).jpg" alt="gytheio-image">
+            <h3>About</h3></a>
+        </div>
+        <div class="image-container">
+            <a href="./pages/history.html"><img class="img-item" src="./images/OIP (2).jpg" alt="gytheio-image">
+            <h3>History</h3></a>
+        </div>
+        <div class="image-container">
+            <a href="./pages/events.html"><img class="img-item" src="./images/OIP (7).jpg" alt="gytheio-image">
+            <h3>Events</h3></a>
+        </div>
+    </div>
+
+    <!-- Slider with play/pause button -->
     <div class="slideshow-container">
 
         <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
-          <img src="./images/gytheio-1.jpg" style="width:100%">
-          <div class="text">To λιμάνι</div>
+        <div class="numbertext">1 / 3</div>
+        <img src="./images/gytheio-1.jpg" style="width:100%">
+        <div class="text">The lighthouse</div>
         </div>
         
         <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
-          <img src="./images/gytheio-2.jpg" style="width:100%">
-          <div class="text">Παραλίες</div>
+        <div class="numbertext">2 / 3</div>
+        <img src="./images/gytheio-2.jpg" style="width:100%">
+        <div class="text">The beaches</div>
         </div>
         
         <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img src="./images/gytheio-3.jpg" style="width:100%">
-          <div class="text">Το ναυάγιο</div>
+        <div class="numbertext">3 / 3</div>
+        <img src="./images/gytheio-3.jpg" style="width:100%">
+        <div class="text">The shipwreck</div>
         </div>
         
         <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -94,91 +102,114 @@
         <br>
         
         <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span> 
-          <span class="dot" onclick="currentSlide(2)"></span> 
-          <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
         </div>
         
         <div class="slider-button-container">
             <button class="slider-button" onclick="playSlides()">play</button>
             <button class="slider-button" onclick="stopSlides()">pause</button>
         </div>
-
-    <h2 class="header2">Vacation in Gytheio</h1>
-    <div class="home-container-1"> 
-        <div >
-            <img class="home-image" src="./images/gytheio-1.jpg" alt="gytheio-image">
-        </div>
-        <div style="display:inline-block;">
-            <p class="home-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus distinctio sed enim, at soluta aliquid doloremque accusantium eum in nesciunt sunt quae cupiditate mollitia nulla inventore quos animi quia fugit sit reiciendis. Consequuntur itaque repellendus illo in cupiditate atque sunt quo dolor consectetur ut dolores, dolorem id aperiam vel minus amet! Tenetur dolores atque ut nemo, impedit vel obcaecati doloremque suscipit incidunt, ratione harum, quisquam tempora veritatis. Labore animi, qui in cumque modi alias, tempore expedita recusandae voluptate ipsa cupiditate fuga! Esse odit vitae labore illo rem. Mollitia quod sint voluptates, distinctio ad illo molestiae culpa deleniti fugit animi porro?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus distinctio sed enim, at soluta aliquid doloremque accusantium eum in nesciunt sunt quae cupiditate mollitia nulla inventore quos animi quia fugit sit reiciendis. Consequuntur itaque repellendus illo in cupiditate atque sunt quo dolor consectetur ut dolores, dolorem id aperiam vel minus amet! Tenetur dolores atque ut nemo, impedit vel obcaecati doloremque suscipit incidunt, ratione harum, quisquam tempora veritatis. Labore animi, qui in cumque modi alias, tempore expedita recusandae voluptate ipsa cupiditate fuga! Esse odit vitae labore illo rem. Mollitia quod sint voluptates, distinctio ad illo molestiae culpa deleniti fugit animi porro?
-            </p>
-        </div>
-    </div>
-    <hr>
-    <h2 class="header2">Gytheio Archaeological Places</h1>
-
-    <div class="home-container-1"> 
-        <div >
-            <img class="home-image" src="./images/gytheio-kastro.jpg" alt="gytheio-image">
-        </div>
-        <div style="display:inline-block;">
-            <p class="home-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus distinctio sed enim, at soluta aliquid doloremque accusantium eum in nesciunt sunt quae cupiditate mollitia nulla inventore quos animi quia fugit sit reiciendis. Consequuntur itaque repellendus illo in cupiditate atque sunt quo dolor consectetur ut dolores, dolorem id aperiam vel minus amet! Tenetur dolores atque ut nemo, impedit vel obcaecati doloremque suscipit incidunt, ratione harum, quisquam tempora veritatis. Labore animi, qui in cumque modi alias, tempore expedita recusandae voluptate ipsa cupiditate fuga! Esse odit vitae labore illo rem. Mollitia quod sint voluptates, distinctio ad illo molestiae culpa deleniti fugit animi porro?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus distinctio sed enim, at soluta aliquid doloremque accusantium eum in nesciunt sunt quae cupiditate mollitia nulla inventore quos animi quia fugit sit reiciendis. Consequuntur itaque repellendus illo in cupiditate atque sunt quo dolor consectetur ut dolores, dolorem id aperiam vel minus amet! Tenetur dolores atque ut nemo, impedit vel obcaecati doloremque suscipit incidunt, ratione harum, quisquam tempora veritatis. Labore animi, qui in cumque modi alias, tempore expedita recusandae voluptate ipsa cupiditate fuga! Esse odit vitae labore illo rem. Mollitia quod sint voluptates, distinctio ad illo molestiae culpa deleniti fugit animi porro?
-            </p>
-        </div>
-        
-    </div>
-    <hr>
-    <h2 class="header2">Beatiful Spots of Gytheio</h1>
-
-    <div class="home-container-1"> 
-        <div >
-            <img class="home-image" src="./images/gytheio-faros.jpg" alt="gytheio-image">
-        </div>
-        <div style="display:inline-block;">
-            <img class="home-image" src="./images/gytheio-limani.jpg" alt="gytheio-image">
-        </div>        
     </div>
 
-    <div class="home-text-spots-container">
-        <p class="home-text-spots">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus distinctio sed enim, at soluta aliquid doloremque accusantium eum in nesciunt sunt quae cupiditate mollitia nulla inventore quos animi quia fugit sit reiciendis. Consequuntur itaque repellendus illo in cupiditate atque sunt quo dolor consectetur ut dolores, dolorem id aperiam vel minus amet! Tenetur dolores atque ut nemo, impedit vel obcaecati doloremque suscipit incidunt, ratione harum, quisquam tempora veritatis. Labore animi, qui in cumque modi alias, tempore expedita recusandae voluptate ipsa cupiditate fuga!
-        </p>
-        <p class="home-text-spots">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus distinctio sed enim, at soluta aliquid doloremque accusantium eum in nesciunt sunt quae cupiditate mollitia nulla inventore quos animi quia fugit sit reiciendis. Consequuntur itaque repellendus illo in cupiditate atque sunt quo dolor consectetur ut dolores, dolorem id aperiam vel minus amet! Tenetur dolores atque ut nemo, impedit vel obcaecati doloremque suscipit incidunt, ratione harum, quisquam tempora veritatis. Labore animi, qui in cumque modi alias, tempore expedita recusandae voluptate ipsa cupiditate fuga!
-        </p>
+    <!-- Images with text -->
+    <div class="home-img-text-section">    
+        <div class="home-img-text-container-1"> 
+            <div >
+                <img class="home-img-text-image" src="./images/gytheio-1.jpg" alt="gytheio-image">
+            </div>
+            <div class="home-img-text-text" style="display:inline-block;">
+                <h2 class="home-img-text-header">Vacation in Gytheio</h2>
+                <p class="home-img-text-par-text">Holidays in Gythio will become a trend this summer! And that's because firstly you go by vehicle and save the boat and secondly 
+                    it has beautiful places to see.It has beautiful beaches with crystal clear waters but also many attractions! It is an ideal destination for families.
+                    Although Gythio offers a place to walk and eat all year round, the peak of its tourist season is the summer, so you can also visit the surrounding sandy beaches.
+                </p>
+            </div>
+        </div>
+
+        <div class="home-img-text-container-2">         
+            <div class="home-img-text-text" style="display:inline-block;">
+                <h2 class="home-img-text-header">Gytheio Archaeological Places</h2>
+                <p class="home-img-text-par-text">In the gytheion you can see Marathonisi which is none other than the ancient Kranai where, according to mythology, 
+                    Paris and Helen found refuge shortly before they left for Troy.
+                     You can still visit the theater that was built during the early Roman times, where performances are still held today.
+                </p>
+            </div>
+            <div >
+                <img class="home-img-text-image" src="./images/gytheio-kastro.jpg" alt="gytheio-image">
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Beautiful spots of Gytheio -->
+    <div class="beatiful-spots-section">
+        <h2>Beatiful Spots of Gytheio</h2>
+
+        <div class="beautiful-container"> 
+            <div >
+                <img class="home-image" src="./images/gytheio-faros.jpg" alt="gytheio-image">
+            </div>
+            <div style="display:inline-block;">
+                <img class="home-image" src="./images/gytheio-limani.jpg" alt="gytheio-image">
+            </div>    
+            <div style="display:inline-block;">
+                <img class="home-image" src="./images/gytheio-kastro.jpg" alt="gytheio-image">
+            </div>      
+        </div>
     </div>
 
 
-
-<!-- Parakatw vrisketai to footer tis selidas -->
-
-    <div class="contact">
-        <h3>Contact me :)</h3>
-        <p><b>Ονοματεπώνυμο:</b> Άρης Καραβοκύρης</p>
-        <p><b>Email:</b> spelldarkness@gmail.com</p>
-        <p><b>Τηλ:</b> 0909003002000</p>
-        <p><b>Fax:</b> 0909003002001</p>
-
+   
+<!-- Footer -->
+    <div class="footer">
+        <div class="footer-logo-menu inner-menu">
+            <div class="logo">
+                <h2>Gytheio</h2>
+            </div>
+            <div class="social-icons-menu">
+                <a href="#"><img class="social-icon" src="./images/2168281.png" alt="facebook-page"></a>
+                <a href="#"><img class="social-icon" src="./images/instagram-icon.webp" alt="instagram-page"></a>
+                <a href="#"><img class="social-icon" src="./images/linkedin-icon-svg-15.jpg" alt="linkedin-page"></a>
+            </div>
+        </div>
+        <div class="footer-links-menu inner-menu">
+            <h3>Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-info-menu inner-menu">
+            <h3>Information</h3>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cookies Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact-menu inner-menu">
+            <h3>Contact</h3>            
+            <ul id="contact-ul">
+                <li>Διεύθυνση - Αθήνα, Αγ. Παρασκευή</li>
+                <li>Τηλέφωνο - 6983154861</li>
+                <li>Email - spelldarkness@gmail.com</li>
+            </ul>
+        </div>
     </div>
-
-    <form>
-        
-    </form>
- 
-
-
- 
-
-  
-
+    
 </body>
-
 
 <script>
     
-    
 
-    let slideIndex = 1;
+// Slider implementation
+
+let slideIndex = 1;
     showSlides(slideIndex);
     
     function plusSlides(n) {
@@ -218,5 +249,6 @@
         clearInterval(slidesPlayer);
     }
 
+    
 </script>
 </html>

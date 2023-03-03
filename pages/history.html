@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/script.js"></script>
+</head>
+<body>
+    <div class="desktop-menu">
+        <div class="logo">
+            <a href="#"><h2>Gytheio</h2></a>
+        </div>
+        <div class="navbar-desktop">
+            <ul class="desktop-menu-list">
+                <li><a href="../index.html"><h2 class="menu-item grow">Home</h2></a></li>
+                <li><a href="./about.html"><h2 class="menu-item grow">About</h2></a></li>
+                <li><a href="#"><h2 class="menu-item grow active-menu-item">History</h2></a></li>
+                <li><a href="./events.html"><h2 class="menu-item grow">Events</h2></a></li>
+                <li id="special-menu-item"><a href="./contact.html"><h2 class="menu-item grow">Contact</h2></a></li>
+            </ul>    
+        </div>             
+    </div>
+    <div class="mobile-menu">
+        <div class="logo">
+            <a href="#"><h2>Gytheio</h2></a>
+        </div>
+        <button onclick="hamburgerClicked()" class="hamburger-menu-btn">
+            <img class="hamburger-icon" src="../images/Hamburger_icon.svg.png">
+            <nav class="">
+                <div class="navbar-mobile" id="navbar-mobile">
+                    <ul class="mobile-menu-list">
+                        <li><a href="../index.html"><h2 class="menu-item grow">Home</h2></a></li>
+                        <li><a href="./about.html"><h2 class="menu-item grow">About</h2></a></li>
+                        <li><a href="#"><h2 class="menu-item grow active-menu-item">History</h2></a></li>
+                        <li><a href="./events.html"><h2 class="menu-item grow">Events</h2></a></li>
+                        <li><a href="./contact.html"><h2 class="menu-item grow">Contact</h2></a></li>
+                    </ul>    
+                </div>        
+            </nav>
+        </button>
+    </div>
+    
+    <!-- Page heading -->
+    <div class="page-header">
+        <h1 class="header-text">History</h1>
+    </div>
+
+    <!-- Images with text -->
+    <div class="home-img-text-section" id="history-img-text-section">    
+        <div class="home-img-text-container-1"> 
+            <div >
+                <img class="home-img-text-image" src="../images/gytheio-1.jpg" alt="gytheio-image">
+            </div>
+            <div class="home-img-text-text" style="display:inline-block;">
+                <h2 class="home-img-text-header">Vacation in Gytheio</h2>
+                <p class="home-img-text-par-text">Holidays in Gythio will become a trend this summer! And that's because firstly you go by vehicle and save the boat and secondly 
+                    it has beautiful places to see.It has beautiful beaches with crystal clear waters but also many attractions! It is an ideal destination for families.
+                    Although Gythio offers a place to walk and eat all year round, the peak of its tourist season is the summer, so you can also visit the surrounding sandy beaches.
+                </p>
+            </div>
+        </div>
+
+        <div class="home-img-text-container-2">         
+            <div class="home-img-text-text" style="display:inline-block;">
+                <h2 class="home-img-text-header">Gytheio Archaeological Places</h2>
+                <p class="home-img-text-par-text">In the gytheion you can see Marathonisi which is none other than the ancient Kranai where, according to mythology, 
+                    Paris and Helen found refuge shortly before they left for Troy.
+                     You can still visit the theater that was built during the early Roman times, where performances are still held today.
+                </p>
+            </div>
+            <div >
+                <img class="home-img-text-image" src="../images/gytheio-kastro.jpg" alt="gytheio-image">
+            </div>
+        </div>
+    </div>
+
+    <!-- Old Photos -->
+    <h2 id="old-photos-header">Old Photos</h2>
+    <div class="old-photos-container">
+        <img src="../images/gytheio-1.jpg" alt="">
+        <img src="../images/gytheio-2.jpg" alt="">
+        <img src="../images/gytheio-3.jpg" alt="">
+        <img src="../images/gytheio-faros.jpg" alt="">
+        <img src="../images/gytheio-kastro.jpg" alt="">
+        <img src="../images/gytheio-theatre.jpg" alt="">
+        
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-logo-menu inner-menu">
+            <div class="logo">
+                <h2>Gytheio</h2>
+            </div>
+            <div class="social-icons-menu">
+                <a href="#"><img class="social-icon" src="../images/2168281.png" alt="facebook-page"></a>
+                <a href="#"><img class="social-icon" src="../images/instagram-icon.webp" alt="instagram-page"></a>
+                <a href="#"><img class="social-icon" src="../images/linkedin-icon-svg-15.jpg" alt="linkedin-page"></a>
+            </div>
+        </div>
+        <div class="footer-links-menu inner-menu">
+            <h3>Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-info-menu inner-menu">
+            <h3>Information</h3>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cookies Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact-menu inner-menu">
+            <h3>Contact</h3>            
+            <ul>
+                <li>Διεύθυνση - Αθήνα, Αγ. Παρασκευή</li>
+                <li>Τηλέφωνο - 6983154861</li>
+                <li>Email - spelldarkness@gmail.com</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
